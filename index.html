@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html id="top" lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halo 5 API</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/3f26d6b9ae.js" crossorigin="anonymous"></script>
+  <section id="top"></section>
+  </head>
+  <body>
+      <header>
+        <div class="nav-container">
+          <nav>  
+            <button class="hamburger" id="hamburger">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-ul" id="nav-ul">                    
+            <li><a href="#top">Top</a></li>
+            <li><a href="#servicetag">Player Service</a></li>
+            <li><a href="#campaign-missions">Campaign Missions</a></li>
+            <li><a href="#bottom">Bottom</a></li>            
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <h1>Halo 5 API</h1> 
+    <section id="servicetag">
+    <div id="servicetag-container" class="container">
+      <h2>ServiceTag and Company</h2>
+      <div class="search-wrapper">
+        <input
+          type="search"
+          id="gamer-inp"
+          placeholder="Enter a Halo 5 gamertag here..."
+        />
+        <button id="search-btn">Search</button>
+      </div>
+      <div class="result" id="servicetagresult"></div>
+    </div>
+  </section>
+<section id="campaign-missions">
+    <div class="container">
+      <h2>Campaign Missions</h2>
+      <div class="result" id="campaignresult"></div>
+    </div>
+  </section>
+    <script src="hamburger.js"></script>
+    <script src="servicetag.js"></script>
+    <script src="campaign missions.js"></script>
+    
+<section id="bottom"></section>
+  </body>
+</html>
