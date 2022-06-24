@@ -1,10 +1,11 @@
+var key = config.SECRET_API_KEY;
 window.addEventListener("load", function() {
   let finalURL2 = `https://www.haloapi.com/metadata/h5/metadata/campaign-missions`;
   console.log(finalURL2);
   fetch(finalURL2, {
     method: "GET",
     headers: {
-      "Ocp-Apim-Subscription-Key": "b739d44798694b3bb7c2c35748b2f575"
+      "Ocp-Apim-Subscription-Key": "SECRET_API_KEY"
     }
   })
     .then((response) => response.json())

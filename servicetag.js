@@ -1,3 +1,5 @@
+var key = config.SECRET_API_KEY;
+
 let searchBtn = document.getElementById("search-btn");
 let gamerInp = document.getElementById("gamer-inp");
 gamerInp.addEventListener("keydown", (e) => {
@@ -13,7 +15,7 @@ searchBtn.addEventListener("click", () => {
   fetch(finalURL, {
     method: "GET",
     headers: {
-      "Ocp-Apim-Subscription-Key": "b739d44798694b3bb7c2c35748b2f575"
+      "Ocp-Apim-Subscription-Key": "key"
     }
   })
     .then((response) => response.json())
