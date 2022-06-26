@@ -4,7 +4,7 @@ window.addEventListener("load", function() {
   fetch(finalURL2, {
     method: "GET",
     headers: {
-      "Ocp-Apim-Subscription-Key": "b739d44798694b3bb7c2c35748b2f575"
+      "Ocp-Apim-Subscription-Key": "your key here"
     }
   })
     .then((response) => response.json())
