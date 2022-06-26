@@ -5,14 +5,12 @@ gamerInp.addEventListener("keydown", (e) => {
     searchBtn.click();
   }
 });
-require ('dotenv').config();
 
 searchBtn.addEventListener("click", () => {
   new KeyboardEvent("keydown", { key: "Enter"});
   let player = gamerInp.value;
   let finalURL = `https://www.haloapi.com/profile/h5/profiles/${player}/appearance`;
   console.log(finalURL);
-  console.log(process.env);
   fetch(finalURL, {
     method: "GET",
     headers: {
