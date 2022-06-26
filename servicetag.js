@@ -1,5 +1,3 @@
-var key = config.SECRET_API_KEY;
-
 let searchBtn = document.getElementById("search-btn");
 let gamerInp = document.getElementById("gamer-inp");
 gamerInp.addEventListener("keydown", (e) => {
@@ -7,15 +5,18 @@ gamerInp.addEventListener("keydown", (e) => {
     searchBtn.click();
   }
 });
+require ('dotenv').config();
+
 searchBtn.addEventListener("click", () => {
   new KeyboardEvent("keydown", { key: "Enter"});
   let player = gamerInp.value;
   let finalURL = `https://www.haloapi.com/profile/h5/profiles/${player}/appearance`;
   console.log(finalURL);
+  console.log(process.env);
   fetch(finalURL, {
     method: "GET",
     headers: {
-      "Ocp-Apim-Subscription-Key": "key"
+      "Ocp-Apim-Subscription-Key": "b739d44798694b3bb7c2c35748b2f575"
     }
   })
     .then((response) => response.json())
